@@ -22,4 +22,23 @@
       <_ContentIncludedByDefault Remove="Views\Login\Login.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="Web.config">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.2.0"></PackageReference>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.2.0"></PackageReference>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="Web.config" CopyToPublishDirectory="Always" />
+    </ItemGroup>
 </Project>

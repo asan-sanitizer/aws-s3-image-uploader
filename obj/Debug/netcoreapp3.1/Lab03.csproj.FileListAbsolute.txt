@@ -140,3 +140,6 @@ C:/Users/Dhani/RiderProjects/raturi_300985889/Lab03/obj/Debug/netcoreapp3.1/Lab0
 /Users/abhi/RiderProjects/raturi_300985889/Lab03/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll
 /Users/abhi/RiderProjects/raturi_300985889/Lab03/bin/Debug/netcoreapp3.1/Humanizer.dll
 /Users/abhi/RiderProjects/raturi_300985889/Lab03/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/abhi/RiderProjects/raturi_300985889/Lab03/bin/Debug/netcoreapp3.1/Web.config
+/Users/abhi/RiderProjects/raturi_300985889/Lab03/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+/Users/abhi/RiderProjects/raturi_300985889/Lab03/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll

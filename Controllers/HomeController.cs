@@ -27,11 +27,23 @@ namespace Lab03.Controllers
             _db_adapter = new DynamoDBAdapter();
         }
 
+        // [HttpPut]
         public IActionResult Login()
         {
             //authorize here 
             return View();
         }
+
+        // [HttpPost]
+        // public IActionResult Login(User user)
+        // {
+        //     if (_db_adapter.isAuthenticated(user.username, user.password))
+        //     {
+        //         return View("UploadFile");
+        //     }
+        //
+        //     return View("Login");
+        // }
 
         [HttpGet]
         public IActionResult Upload()
@@ -55,7 +67,7 @@ namespace Lab03.Controllers
                 _s3_adapter.uploadFile(fullPath);
                 
                 // save the link of the file to dynamodb 
-                _db_adapter.insertItems(file.myFile.FileName, file.comments);
+                _db_adapter.insertFile( file.myFile.FileName, file.comments);
                 
             }
             

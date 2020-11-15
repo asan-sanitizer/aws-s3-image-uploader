@@ -1,4 +1,5 @@
-﻿<style>
+﻿@model User
+<style>
 *{
   margin:0;
   padding: 0;
@@ -69,21 +70,21 @@ body{
 </style>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <div class="wrap">
-        <form class="login-form" action="">
+        <form class="login-form"  action="">
             <div class="form-header">
                 <h3> Login </h3>
             </div>
             
             <div class="form-group">
-                <input type="text" class="form-input" placeholder="johndoe123">
+                <input type="text" asp-for="username" class="form-input" placeholder="johndoe123">
             </div>
             
             <div class="form-group">
-                <input type="password" class="form-input" placeholder="password">
+                <input type="password" asp-for="password" class="form-input" placeholder="password">
             </div>
             
             <div class="form-group">
-                <button class="form-button" type="submit" asp-controller="Home" asp-action="Upload" >Login</button>
+                <button class="form-button" type="submit" asp-controller="Home" asp-action="Upload">Login</button>
             </div>
             <div class="form-footer">
             <a href="#">Sign Up</a>
